@@ -1,0 +1,24 @@
+@model LoginUser
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/">Register</a>
+    <form action="/userlogin" method="POST">
+        <label asp-for="Email"></label>
+        <span asp-validation-for="Email"></span>
+        <input asp-for="Email">
+        <br>
+        <label asp-for="Password"></label>
+        <span asp-validation-for="Password"></span>
+        <input asp-for="Password">
+        <br>
+        <input type="submit" name="" value="Login!">
+    </form>
+</body>
+</html>

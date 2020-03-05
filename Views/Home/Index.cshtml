@@ -1,0 +1,36 @@
+﻿@model User
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/Login">Login</a>
+    <form action="/register" method="POST">
+        <label asp-for="first_name"></label>
+        <span asp-validation-for="first_name"></span>
+        <input asp-for="first_name">
+        <br>
+        <label asp-for="last_name"></label>
+        <span asp-validation-for="last_name"></span>
+        <input asp-for="last_name">
+        <br>
+        <label asp-for="Email"></label>
+        <span asp-validation-for="Email"></span>
+        <input asp-for="Email">
+        <br>
+        <label asp-for="Password"></label>
+        <span asp-validation-for="Password"></span>
+        <input asp-for="Password">
+        <br>
+        <label asp-for="Confirm"></label>
+        <span asp-validation-for="Confirm"></span>
+        <input asp-for="Confirm">
+        <br>
+        <input type="submit" name="" value="Sign up Now!">
+    </form>
+</body>
+</html>
